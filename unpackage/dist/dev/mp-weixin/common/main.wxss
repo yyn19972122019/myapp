@@ -1,0 +1,144 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+@charset "utf-8";
+/*样式重置 reset */
+page,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._p,
+._dl,
+._dd,
+._ul,
+._ol,
+input {
+    margin: 0;
+    /*去掉自带外间距*/
+    padding: 0;
+    /*去掉自带内填充*/
+}
+._em,
+._i {
+    font-style: normal;
+    /*斜体扶正*/
+}
+._li {
+    list-style: none;
+    /*去掉默认列表符*/
+}
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6,
+._b,
+._strong,
+._th {
+    font-weight: normal;
+    /*去掉标题自带加粗*/
+}
+._a {
+    outline: none;
+    /*去掉描边*/
+    text-decoration: none;
+    /*去掉自带下划线*/
+}
+._img {
+    border: none;
+    /*去掉ie浏览器图片外面的边框*/
+    vertical-align: top;
+    /*图片对齐方式*/
+}
+._table {
+    border-collapse: collapse;
+    /*去掉表格自带间隙*/
+    border-spacing: 0;
+}
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    /*背景色透明*/
+}
+textarea {
+    outline: none;
+    resize: none;
+    /*禁止调整文本域尺寸*/
+    overflow: auto;
+    /*在浏览器默认状态下没有滚动条*/
+}
+/*public style*/
+.clearfix {
+    zoom: 1;
+    /*IE浏览器清浮动*/
+}
+.clearfix:after {
+    content: '';
+    /*添加一个空内容*/
+    display: block;
+    /*转块*/
+    clear: both;
+    /*清浮动*/
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+._img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+page,
+page {
+    background-color: #f6f6f6;
+}
+._a {
+    color: #000000;
+}
+.model_mask {
+    position: fixed;
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 7.5rem / 2);
+    background-color: rgba(0, 0, 0, .3);
+    overflow-y: auto;
+    z-index: 20;
+}
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+input::placeholder {
+    color: #ccc;
+}
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+textarea::placeholder {
+    color: #ccc;
+}
+page{
+	background-color: #F2F2F2;
+}
+

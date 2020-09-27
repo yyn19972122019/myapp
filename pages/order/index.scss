@@ -1,0 +1,125 @@
+
+.bac{
+	background-color: #FFFFFF;
+}
+.father{
+	 .title{
+		 height:131rpx;
+		 border-bottom: 6rpx solid #39B54A;
+		 margin-bottom: 10rpx;
+			.push{
+				padding: 0 28rpx;
+				display: flex;
+				justify-content:space-between;
+				align-items: center;
+				height: 100%;
+				.lefts{
+					width: 43rpx;
+					height: 43rpx;
+					vertical-align: middle;
+					margin-right: 25rpx;
+				}
+				.rights{
+					width: 17rpx;
+					height:28rpx;
+					vertical-align: middle;
+				}
+			}
+	 }
+	 .content{
+		 padding: 21rpx;
+		 padding-bottom: 10rpx;
+		 display: flex;
+		 margin-bottom: 11rpx;
+		 image{
+			 width: 230rpx;
+			 height: 230rpx;
+			 margin-right: 57rpx;
+		 }
+		 .test{
+			 position: relative;
+			 .test_t{
+				 font-size: 24rpx;
+				 color: #4D4D4D;
+				 line-height: 40rpx;
+				 padding-bottom:28rpx;
+			 }
+			 .num{
+				 font-size: 18rpx;
+				 padding-right: 30rpx;
+				 color: #808080;
+				 text{
+					 float: right;
+				 }
+			 }
+			 .Specifications{
+				 color: #808080;
+				 font-size: 18rpx;
+			 }
+			 .sprice{
+				 position: absolute;
+				 right:22rpx;
+				 bottom: 0;
+				 font-size:48rpx;
+				 color: $color;
+			 }
+		 }
+	 }
+	 .Discount{
+		 padding: 42rpx;
+		 display: flex;
+		 justify-content: space-between;
+		 margin-bottom: 11rpx;
+		 .nones{
+			 image{
+				 width: 17rpx;
+				 height:32rpx;
+				 vertical-align: middle;
+				 margin-left: 30rpx;
+			 }
+		 }
+	 }
+	 .totail{
+		 padding: 0 38rpx;
+		 margin-bottom: 11rpx;
+		 .totos{
+			display: flex;
+			font-size: 30rpx;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 3px solid #F2F2F2;
+			line-height: 110rpx;
+			text:last-child{
+				color: $color;
+			}
+		 }
+	 }
+	 .bottom_bar{
+		 position: fixed;
+		 width: 100%;
+		 bottom: 0;
+		 line-height: 99rpx;
+		 display: flex;
+		 .pay{
+			 text-align: right;
+			 width: 491rpx;
+			 flex: 1;
+			 padding-right:35rpx;
+			 text{
+				 color: $color;
+			 }
+		 }
+		 .submit{
+			 text-align: center;
+			 width: 259rpx;
+			 height: 100%;
+			 background-color: $color;
+			 color: #fff;
+			 image{
+				 width: 13rpx;
+				 height: 18rpx;
+				 margin-left:18rpx;
+			 }
+		 }
+	 }
+}

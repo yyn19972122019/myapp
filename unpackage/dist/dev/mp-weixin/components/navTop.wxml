@@ -1,0 +1,1 @@
+<view class="prohibition"><view class="demo" style="{{('height:'+demo.height+'px;'+'padding-top:'+demo.top+'px;padding-bottom:10rpx')}}"><view class="left" style="{{('top:'+demo.top+'px')}}"><image src="../static/top-left.png" mode></image><text>关闭</text></view>{{''+title+''}}</view></view>

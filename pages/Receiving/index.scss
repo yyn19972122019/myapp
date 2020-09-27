@@ -1,0 +1,45 @@
+.bac{
+	background-color: #fff;
+}
+.content{
+	.item{
+		padding:35rpx;
+		display: flex;
+		align-items: center;
+		border-bottom: 1rpx solid #999999;
+		.name{
+			width: 220rpx;
+		}
+		input{
+			width: 530rpx;
+			flex: 1;
+			color: #999999;
+		}
+		image{
+			width: 16rpx;
+			height:32rpx;
+		}
+	}
+	.home{
+		padding:15rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30rpx;
+		background-color: #fff;
+		image{
+			width: 104rpx;
+			height:104rpx;
+		}
+	}
+	.submit{
+		width:720rpx;
+		height: 100rpx;
+		background-color: $color;
+		margin: 0 auto;
+		text-align: center;
+		color: #FFFFFF;
+		line-height: 100rpx;
+		border-radius: 10rpx;
+	}
+}

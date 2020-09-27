@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/Receiving/index",
+    "pages/order/index",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F2F2F2",
+    "backgroundColor": "#F0AD4E"
+  },
+  "usingComponents": {}
+}
