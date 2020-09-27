@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/fans/index",
     "pages/myOrder/index",
     "pages/settlement/index",
     "pages/user/index",

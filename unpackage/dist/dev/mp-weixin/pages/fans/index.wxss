@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.title.data-v-61a0d508 {
+  position: relative;
+  margin-bottom: 10rpx;
+  background-color: #FBB03B;
+  height: 185rpx;
+  line-height: 185rpx;
+  color: #FFFFFF;
+  padding: 0 48rpx;
+}
+.title text.data-v-61a0d508 {
+  padding: 0 55rpx;
+}
+.title text.data-v-61a0d508:last-child {
+  position: absolute;
+  bottom: -46rpx;
+  right: 75rpx;
+}
+.content.data-v-61a0d508 {
+  background-color: #FFFFFF;
+  margin-bottom: 11rpx;
+}
+.content .items.data-v-61a0d508 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1rpx solid #999999;
+}
+.content .items.data-v-61a0d508:last-child {
+  border: none;
+}
+.content .left.data-v-61a0d508 {
+  padding-right: 31rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.content .left image.data-v-61a0d508 {
+  width: 90rpx;
+  height: 115rpx;
+}
+.content .left .huiyuan.data-v-61a0d508 {
+  font-size: 24rpx;
+  color: #999999;
+}
+.btm.data-v-61a0d508 {
+  width: 400rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 353rpx;
+  color: #999999;
+}
+.btm text.data-v-61a0d508 {
+  display: inline-block;
+  width: 60rpx;
+  height: 3rpx;
+  background-color: #999999;
+  vertical-align: super;
+}
+.submit.data-v-61a0d508 {
+  background-color: #39b54a;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 100rpx;
+}
+

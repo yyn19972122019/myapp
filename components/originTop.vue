@@ -2,10 +2,10 @@
     <view class="prohibition">
         <view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;padding-bottom:10rpx'">
             <view class="left" :style="'top:' + demo.top + 'px'">
-                <image src="../static/top-left.png" mode=""></image>
-				<text>关闭</text>
+                <image src="../static/left.png" mode=""></image>
             </view>
-            {{title}}
+			<image src="../static/fans.png" class="imgs"></image>
+			<input placeholder="搜用户名" />
         </view>
     </view>
 </template>
@@ -23,7 +23,7 @@
         },
         created () {
             const demo = uni.getMenuButtonBoundingClientRect()
-            this.demo.top = demo.top
+            this.demo.top = 27
             this.demo.height = demo.height
         }
     }
@@ -34,8 +34,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: #f2f2f2;
+        background: #FBB03B;
         font-size: 26rpx;
         .left{
             float: left;
@@ -56,5 +55,27 @@
 				vertical-align: top;
 			}
         }
+		.imgs{
+			position: absolute;
+			bottom: 23rpx;
+			left: 75rpx;
+			width: 27rpx;
+			height: 27rpx;
+			z-index: 60;
+		}
+		input{
+			box-sizing: border-box;
+			float: left;
+			position: absolute;
+			padding-left: 50rpx;
+			top: 50rpx;
+			bottom: 0;
+			left: 57rpx;
+			border-radius: 26rpx;
+			width: 500rpx;
+			height: 55rpx;
+			// border: 1rpx solid black;s
+			background-color: #FFFFFF;
+		}
     }
 </style>
