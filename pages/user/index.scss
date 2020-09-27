@@ -1,0 +1,43 @@
+.bac{
+	background-color: #fff;
+}
+.content{
+	font-size: 30rpx;
+	background-color: #fff;
+	padding-bottom: 308rpx;
+}
+.items{
+	padding: 0 44rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 6rpx solid #F2F2F2;
+	height: 96rpx;
+	view:last-child{
+		color: #999999;
+	}
+	image{
+		width:90rpx;
+		height:90rpx;
+		vertical-align: middle;
+	}
+	text{
+		color: #999999;
+		font-size: 24rpx;
+	}
+	#jiantou{
+		width:12rpx;
+		height: 24rpx;
+		margin-left: 15rpx;
+	}
+}
+.submit{
+		width:720rpx;
+		height: 100rpx;
+		background-color: $color;
+		margin: 0 auto;
+		text-align: center;
+		color: #FFFFFF;
+		line-height: 100rpx;
+		border-radius: 10rpx;
+	}

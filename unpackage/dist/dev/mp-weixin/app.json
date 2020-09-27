@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/myOrder/index",
+    "pages/settlement/index",
+    "pages/user/index",
     "pages/Receiving/index",
     "pages/order/index",
     "pages/index/index"

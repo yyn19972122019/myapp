@@ -1,0 +1,28 @@
+.father{
+	padding: 39rpx 24rpx;
+	.title{
+		margin-bottom: 31rpx;
+		text{
+			margin-right: 70rpx;
+		}
+		text:last-child{
+			color: #39B54A;
+			border-bottom: 6rpx solid #39B54A ;
+		}
+	}
+	.content{
+		background-color: #FFFFFF;
+		padding: 0 33rpx;
+		margin-bottom: 23rpx;
+		.items{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 97rpx;
+			border-bottom: 6rpx solid #F2F2F2;
+		}
+		.items:last-child{
+			border: none;
+		}
+	}
+}

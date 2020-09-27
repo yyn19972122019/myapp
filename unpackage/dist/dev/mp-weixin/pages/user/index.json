@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "收货地址",
+  "navigationBarTitleText": "个人信息",
   "usingComponents": {
     "nav-top": "/components/navTop"
   }
