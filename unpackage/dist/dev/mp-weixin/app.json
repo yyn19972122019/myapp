@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/profit/index",
+    "pages/gold/index",
+    "pages/integral/index",
+    "pages/envelopes/index",
     "pages/fans/index",
     "pages/myOrder/index",
     "pages/settlement/index",

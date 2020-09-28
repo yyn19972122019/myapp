@@ -35,7 +35,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  background: #f2f2f2;
+  background: #fbb03b;
   font-size: 26rpx;
 }
 .demo .left.data-v-547a012d {
@@ -54,9 +54,6 @@
   width: 16rpx;
   height: 32rpx;
   margin-right: 42rpx;
-}
-.demo .left text.data-v-547a012d {
-  display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 

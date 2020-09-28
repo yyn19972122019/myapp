@@ -1,6 +1,30 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/profit/index",
+		"style": {
+			"navigationBarTitleText": "收益记录"
+		}
+	},
+	{
+		"path": "pages/gold/index",
+		"style": {
+			"navigationBarTitleText": "我的金币"
+		}
+	},
+	{
+		"path": "pages/integral/index",
+		"style": {
+			"navigationBarTitleText": "我的积分"
+		}
+	},
+	{
+		"path": "pages/envelopes/index",
+		"style": {
+			"navigationBarTitleText": "我的红包"
+		}
+	},
+	{
 		"path": "pages/fans/index",
 		"style": {
 			"navigationBarTitleText": "粉丝"

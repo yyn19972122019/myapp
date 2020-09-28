@@ -57,7 +57,7 @@
         }
 		.imgs{
 			position: absolute;
-			bottom: 23rpx;
+			bottom: 30rpx;
 			left: 75rpx;
 			width: 27rpx;
 			height: 27rpx;

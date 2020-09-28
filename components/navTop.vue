@@ -1,30 +1,35 @@
 <template>
     <view class="prohibition">
-        <view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;padding-bottom:10rpx'">
+        <view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor">
             <view class="left" :style="'top:' + demo.top + 'px'">
                 <image src="../static/top-left.png" mode=""></image>
-				<text>关闭</text>
+				<text style="display: inline-block;vertical-align: middle;">关闭</text>
             </view>
-            {{title}}
+            <text style="position: absolute;top:65rpx;">{{title}}</text>
+			<text style="position: absolute;right:190rpx;top:65rpx;" v-if="mode">明细</text>
         </view>
     </view>
 </template>
 
 <script>
     export default {
-		props:['title'],
+		props:['title','mode'],
         data () {
             return {
                 demo: {
                     top: 0,
                     height: 0
-                }
+                },
+				mycolor:''
             }
         },
         created () {
             const demo = uni.getMenuButtonBoundingClientRect()
             this.demo.top = demo.top
             this.demo.height = demo.height
+			if(this.mode){
+				this.mycolor = '#ffff'
+			}
         }
     }
 </script>
@@ -35,8 +40,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #f2f2f2;
+        background: #fbb03b;
         font-size: 26rpx;
+		// // text{
+		// // 	display: inline-block;
+		// // 	vertical-align: top;
+		// }
         .left{
             float: left;
             position: absolute;
@@ -50,10 +59,7 @@
 				width: 16rpx;
 				height: 32rpx;
 				margin-right: 42rpx;
-			}
-			text{
-				display: inline-block;
-				vertical-align: top;
+				vertical-align: middle;
 			}
         }
     }

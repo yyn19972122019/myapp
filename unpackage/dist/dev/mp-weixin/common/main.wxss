@@ -16,6 +16,9 @@
 /*每个页面公共css */
 @charset "utf-8";
 /*样式重置 reset */
+page{
+	box-sizing:border-box;
+}
 page,
 ._h1,
 ._h2,
@@ -60,9 +63,12 @@ input {
     /*去掉描边*/
     text-decoration: none;
     /*去掉自带下划线*/
+	color: #000000;
 }
 ._img {
     border: none;
+	width: 100%;
+	height: 100%;
     /*去掉ie浏览器图片外面的边框*/
     vertical-align: top;
     /*图片对齐方式*/
@@ -104,17 +110,9 @@ textarea {
 .fr {
     float: right;
 }
-._img {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
 page,
 page {
-    background-color: #f6f6f6;
-}
-._a {
-    color: #000000;
+    background-color: #F2F2F2;
 }
 .model_mask {
     position: fixed;
@@ -137,8 +135,5 @@ textarea::-webkit-input-placeholder {
 }
 textarea::placeholder {
     color: #ccc;
-}
-page{
-	background-color: #F2F2F2;
 }
 
