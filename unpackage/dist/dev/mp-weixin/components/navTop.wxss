@@ -35,7 +35,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  background: #fbb03b;
+  background: #FFFFFF;
   font-size: 26rpx;
 }
 .demo .left.data-v-547a012d {

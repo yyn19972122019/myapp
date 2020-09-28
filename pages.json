@@ -1,6 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/Monthly/index",
+		"style": {
+			"navigationBarTitleText": "结算月报"
+		}
+	},
+	{
+		"path": "pages/Discount/index",
+		"style": {
+			"navigationBarTitleText": "我的优惠券"
+		}
+	},
+	{
 		"path": "pages/profit/index",
 		"style": {
 			"navigationBarTitleText": "收益记录"

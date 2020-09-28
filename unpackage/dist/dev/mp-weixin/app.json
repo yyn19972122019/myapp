@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/Monthly/index",
+    "pages/Discount/index",
     "pages/profit/index",
     "pages/gold/index",
     "pages/integral/index",

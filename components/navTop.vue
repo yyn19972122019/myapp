@@ -1,6 +1,6 @@
 <template>
     <view class="prohibition">
-        <view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor">
+        <view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor+';'+'background:'+mybackground+';'">
             <view class="left" :style="'top:' + demo.top + 'px'">
                 <image src="../static/top-left.png" mode=""></image>
 				<text style="display: inline-block;vertical-align: middle;">关闭</text>
@@ -20,7 +20,8 @@
                     top: 0,
                     height: 0
                 },
-				mycolor:''
+				mycolor:'',
+				mybackground:''
             }
         },
         created () {
@@ -29,6 +30,7 @@
             this.demo.height = demo.height
 			if(this.mode){
 				this.mycolor = '#ffff'
+				this.mybackground = '#fbb03b'
 			}
         }
     }
@@ -40,12 +42,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #fbb03b;
+        background: #FFFFFF;
         font-size: 26rpx;
-		// // text{
-		// // 	display: inline-block;
-		// // 	vertical-align: top;
-		// }
         .left{
             float: left;
             position: absolute;

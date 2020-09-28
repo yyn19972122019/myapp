@@ -136,7 +136,8 @@ var _default =
         top: 0,
         height: 0 },
 
-      mycolor: '' };
+      mycolor: '',
+      mybackground: '' };
 
   },
   created: function created() {
@@ -145,6 +146,7 @@ var _default =
     this.demo.height = demo.height;
     if (this.mode) {
       this.mycolor = '#ffff';
+      this.mybackground = '#fbb03b';
     }
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

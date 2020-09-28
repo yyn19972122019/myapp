@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "结算月报",
+  "usingComponents": {
+    "top": "/components/navTop"
+  }
+}
