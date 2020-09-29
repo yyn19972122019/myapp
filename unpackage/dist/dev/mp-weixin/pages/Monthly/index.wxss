@@ -56,6 +56,7 @@
   margin: 0 auto;
   background-color: #F2F2F2;
   padding: 23rpx;
+  margin-bottom: 84rpx;
 }
 .content .item.data-v-1c6db487 {
   display: -webkit-box;
@@ -75,8 +76,10 @@
 }
 .content .items.data-v-1c6db487 {
   padding: 25rpx;
+  padding-bottom: 0;
   overflow: hidden;
   background-color: #FFFFFF;
+  margin-bottom: 20rpx;
 }
 .content .items view.data-v-1c6db487:first-child {
   padding-bottom: 37rpx;
@@ -104,10 +107,55 @@
   float: left;
 }
 .content .items view:last-child .last.data-v-1c6db487 {
+  font-size: 24rpx;
   float: right;
 }
 .content .items view:last-child .last text.data-v-1c6db487:first-child {
   color: #CCCCCC;
   margin-right: 10rpx;
+}
+.content .items view:last-child .last text.data-v-1c6db487:last-child {
+  color: #fbb03b;
+}
+.content .submit.data-v-1c6db487 {
+  width: 660rpx;
+  line-height: 100rpx;
+  background-color: #d6d6d6;
+  text-align: center;
+  border-radius: 16rpx;
+}
+.content .toast.data-v-1c6db487 {
+  margin-top: 10rpx;
+  margin-bottom: 12rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+.tixian.data-v-1c6db487 {
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.ti_items.data-v-1c6db487 {
+  width: 700rpx;
+  margin: 0 auto;
+  padding: 0 49rpx;
+  box-sizing: border-box;
+  margin-bottom: 16rpx;
+  border: 1rpx solid #d6d6d6;
+  border-radius: 16rpx;
+}
+.ti_items .ti.data-v-1c6db487 {
+  overflow: hidden;
+  line-height: 68rpx;
+  border-bottom: 3rpx solid #F2F2F2;
+}
+.ti_items .ti text.data-v-1c6db487 {
+  float: left;
+}
+.ti_items .ti text.data-v-1c6db487:last-child {
+  float: right;
+  color: #808080;
+}
+.ti_items .ti.data-v-1c6db487:last-child {
+  border: none;
 }
 
