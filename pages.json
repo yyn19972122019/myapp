@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/invitation/index",
+		"style": {
+			"navigationBarTitleText": "邀请好友"
+		}
+	},
+	{
 		"path": "pages/Monthly/index",
 		"style": {
 			"navigationBarTitleText": "结算月报"

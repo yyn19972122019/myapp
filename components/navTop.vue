@@ -6,14 +6,14 @@
 				<text style="display: inline-block;vertical-align: middle;">关闭</text>
             </view>
             <text style="position: absolute;top:65rpx;">{{title}}</text>
-			<text style="position: absolute;right:190rpx;top:65rpx;" v-if="mode">明细</text>
+			<text style="position: absolute;right:190rpx;top:65rpx;" v-if="mode && mingxi">明细</text>
         </view>
     </view>
 </template>
 
 <script>
     export default {
-		props:['title','mode'],
+		props:['title','mode','mingxi'],
         data () {
             return {
                 demo: {

@@ -1,6 +1,6 @@
 <template>
 	<view class="father">
-		<Top :title='title' mode='true'></Top>
+		<Top :title='title' mode='true' mingxi='true'></Top>
 		<view class="title">
 			<view class="item_one">
 				<view>
