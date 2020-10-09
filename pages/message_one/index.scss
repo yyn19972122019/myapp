@@ -1,0 +1,116 @@
+.title{
+	padding: 20rpx;
+	line-height: 80rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	margin-bottom: 12rpx;
+	font-size: 24rpx;
+	view{
+		margin-right: 41rpx;
+	}
+	.first{
+		font-size: 30rpx;
+		width: 120rpx;
+		text{
+			color: #39b54a;
+		}
+		view{
+		  width: 100%;
+		  height: 6rpx;
+		  background-color: #39b54a;
+		}
+	}
+}
+.mt_gun{
+	display: flex;
+	align-items: center;
+	.gun{
+		width: 3rpx;
+		display: inline-block;
+		height: 21rpx;
+		background-color: grey;
+		vertical-align: middle;
+	}
+}
+.clock{
+	display: flex;
+	align-items: center;
+	padding-left: 31rpx;
+	font-size: 20rpx;
+	margin-bottom: 10rpx;
+	img{
+		width: 32rpx;
+		height: 32rpx;
+		margin-right: 20rpx;
+	}
+}
+.content{
+	margin: 0 43rpx;
+	padding-left: 43rpx;
+	border-left: 1rpx solid grey;
+	.detail{
+		position: relative;
+		width: 636rpx;
+		padding: 26rpx;
+		background-color: #FFFFFF;
+		border-radius: 16rpx;
+		box-sizing: border-box;
+		margin-bottom: 10rpx;
+		.detail_t{
+			font-size: 30rpx;
+			margin-bottom: 16rpx;
+		}
+		.detail_d{
+			font-size: 26rpx;
+		}
+		.detail_m{
+			display: flex;
+			font-size: 24rpx;
+			border: 16rpx solid #c1272d;
+			padding: 12rpx;
+			image{
+				width: 206rpx;
+				height: 187rpx;
+			}
+			.m_one{
+				padding-left: 18rpx;
+			}
+			.m_two{
+				margin-top: 16rpx;
+				#two{
+					float: right;
+					text{
+						color: #ff0000;
+					}
+				}
+				#there{
+					text-decoration:line-through;
+					color:grey;
+				}
+				#four{
+					float: right;
+					display: inline-block;
+					border: 1rpx solid #ff0000;
+					width: 159rpx;
+					line-height: 38rpx;
+					text-align: center;
+					color: #FF0000;
+				}
+			}
+		}
+		.detail_zhezhao{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color:#F2F2F2;
+			opacity: 0.8;
+		}
+		.huodong{
+			position: absolute;
+			width: 202rpx;
+			height: 202rpx;
+			bottom: -20rpx;
+			right: 0;
+		}
+	}
+}

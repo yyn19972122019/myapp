@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "确认订单",
   "usingComponents": {
-    "nav-top": "/components/navTop"
+    "nav-top": "/components/navTop",
+    "pay": "/components/orderPay"
   }
 }

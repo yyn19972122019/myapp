@@ -760,7 +760,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7122,7 +7122,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7143,14 +7143,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7235,7 +7235,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7812,6 +7812,20 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
+/*!*******************************************!*\
+  !*** D:/app/youShenghuo/static/clock.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsSAAALEgHS3X78AAACP0lEQVRYhcWY0XHCMAyG5UyQ9z40D31vNmhGyAZlgzIC3SAj5K2vjEA3yAiwAUygnjiFE0J2bOOC73wcjmx/1m/LShwiQk5xzjUA0HDXDgD2XAERd1mDcufoCgA9AIw8MS5UgloTdNIcUUYAq0gIXx1jwYKSOedaHuzdY/LLv+QNsq1ZxleP/TcibrIkY68cjRUTYL/g0Yblsrw6EXiSZAxjgXgHCsB1Bhj9b6OADBjyUpcKosYkKQcD6maB1mqi3ZsBphc7eYF4FcccGA4HsbYaauMDGpRMpsaBCVIWoOVrroD4VEiDdYIMO9Evaq+xGnKjjxpIEu8T90UykEe6s3crDke9CE3hwFWoICKFkYMYjQCh4mg8R9YTGz6qDGKes1MqPupzyb+l88pW9PqYgVrROD2SBhFpY5/m/6RWJXIaeIKHQDmhrgKGTyklgN4KjHEpdwE55+hEvoimu/egBmo8dj6YT9H0g4jHDIZaN2xEtBwio+yok7bM27/W0Ro4IEVfG6VgRJZwNbdFGbzlS8HwWFutjvUgOElBGJ1htBJIZ4pRuVBB71wyR18acZNaFobplQN6C0h76S5JAjCtSpV3V8+VsU4ti0LxAZpUqtx4gbjT9B9QhmfQeuGMWcWcwGe/m6ngO9eVaRtwrdzkF28lJvK+jxQmDEZ8bKA99WU8OjDwpPMZlqabM0CjH8nkv4Qjtbe8lVKPLNvie1vKPqBV63tsqZJcUSBRkgWkJDiq8zchWUgOAqH4kpYfAcAf3EpEp6h8NmwAAAAASUVORK5CYII="
 
 /***/ })
 ]]);

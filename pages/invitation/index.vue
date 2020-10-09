@@ -217,7 +217,7 @@ import Top from '../../components/navTop.vue'
 		position: relative;
 		bottom: -1270rpx;
 		box-sizing: border-box;
-		margin-bottom: 30rpx;
+		margin-bottom : 30rpx;
 		width: 750rpx;
 		padding: 0 33rpx;
 		display: flex;

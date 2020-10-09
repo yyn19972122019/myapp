@@ -1,0 +1,69 @@
+.title{
+	padding: 20rpx;
+	line-height: 80rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	margin-bottom: 12rpx;
+	font-size: 24rpx;
+	view{
+		margin-right: 41rpx;
+	}
+	.first{
+		font-size: 30rpx;
+		width: 120rpx;
+		text{
+			color: #39b54a;
+		}
+		view{
+		  width: 100%;
+		  height: 6rpx;
+		  background-color: #39b54a;
+		}
+	}
+}
+.mt_gun{
+	display: flex;
+	align-items: center;
+	.gun{
+		width: 3rpx;
+		display: inline-block;
+		height: 21rpx;
+		background-color: grey;
+		vertical-align: middle;
+	}
+}
+.clock{
+	display: flex;
+	align-items: center;
+	padding-left: 31rpx;
+	font-size: 20rpx;
+	margin-bottom: 10rpx;
+	img{
+		width: 32rpx;
+		height: 32rpx;
+		margin-right: 20rpx;
+	}
+}
+.content{
+	margin: 0 43rpx;
+	padding-left: 43rpx;
+	border-left: 1rpx solid grey;
+	.detail{
+		width: 636rpx;
+		padding: 35rpx;
+		padding-top: 0;
+		background-color: #FFFFFF;
+		border-radius: 16rpx;
+		box-sizing: border-box;
+		margin-bottom: 10rpx;
+		.detail_t{
+			font-size: 48rpx;
+			border-bottom: 6rpx solid #f2f2f2;
+			line-height: 100rpx;
+			margin-bottom: 16rpx;
+		}
+		.detail_d{
+			font-size: 26rpx;
+		}
+	}
+}

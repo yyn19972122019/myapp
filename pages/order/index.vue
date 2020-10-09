@@ -1,6 +1,7 @@
 <template>
 	<view class="father">
 		<navTop :title='title'></navTop>
+		<pay one='true'></pay>
 		<view class="title bac">
 			<view class="push">
 				<view>
@@ -70,9 +71,11 @@
 
 <script>
 import navTop from '../../components/navTop.vue'
+import Pay from '../../components/orderPay.vue'
 	export default {
 		components:{
-			navTop
+			navTop,
+			Pay
 		},
 		data() {
 			return {

@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/order/index",
+    "pages/message_one/index",
+    "pages/message/index",
     "pages/invitation/index",
     "pages/Monthly/index",
     "pages/Discount/index",
@@ -12,7 +15,6 @@
     "pages/settlement/index",
     "pages/user/index",
     "pages/Receiving/index",
-    "pages/order/index",
     "pages/index/index"
   ],
   "subPackages": [],
@@ -23,6 +25,5 @@
     "navigationBarBackgroundColor": "#F2F2F2",
     "backgroundColor": "#F0AD4E"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap84.json"
+  "usingComponents": {}
 }

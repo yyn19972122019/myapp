@@ -1,6 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/order/index",
+		"style": {
+			"navigationBarTitleText": "确认订单"
+		}
+	},
+	{
+		"path": "pages/message_one/index",
+		"style": {
+			"navigationBarTitleText": "消息1"
+		}
+	},
+	{
+		"path": "pages/message/index",
+		"style": {
+			"navigationBarTitleText": "消息"
+		}
+	},
+	{
 		"path": "pages/invitation/index",
 		"style": {
 			"navigationBarTitleText": "邀请好友"
@@ -70,12 +88,6 @@
 		"path": "pages/Receiving/index",
 		"style": {
 			"navigationBarTitleText": "收货地址"
-		}
-	},
-	{
-		"path": "pages/order/index",
-		"style": {
-			"navigationBarTitleText": "确认订单"
 		}
 	},
 		{
