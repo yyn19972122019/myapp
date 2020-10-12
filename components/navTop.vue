@@ -1,12 +1,12 @@
 <template>
 	<view class="prohibition">
-		<view class="demo" :style="'height:' +  demo.height + 'px;' + 'padding-top:' + demo.top + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor+';'+'background:'+mybackground+';'">
-			<view class="left" :style="'top:' + demo.top + 'px'">
+		<view class="demo" :style="'height:' +  demo.height + 'px;' +'padding-top:' +  demo.top + 'px;' + 'line-height:' + demo.height + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor+';'+'background:'+mybackground+';'">
+			<view class="left">
 				<image src="../static/top-left.png" mode=""></image>
-				<text style="display: inline-block;vertical-align: middle;">关闭</text>
+				<text>关闭</text>
 			</view>
-			<text style="position: absolute;top:65rpx;">{{title}}</text>
-			<text style="position: absolute;right:190rpx;top:65rpx;" v-if="mode && mingxi">明细</text>
+			<text>{{title}}</text>
+			<text style="margin-left: 100rpx;" v-if="mode && mingxi">明细</text>
 		</view>
 	</view>
 </template>
@@ -18,16 +18,15 @@
 			return {
 				demo: {
 					top: 0,
-					height: 0
+					height:0,
 				},
 				mycolor: '',
 				mybackground: ''
 			}
 		},
 		created() {
-			const demo = uni.getMenuButtonBoundingClientRect()
-			this.demo.top = demo.top
-			this.demo.height = demo.height
+			this.demo.top = this.StatusBar
+			this.demo.height = this.CustomBar
 			if (this.mode) {
 				this.mycolor = '#ffff'
 				this.mybackground = '#fbb03b'
@@ -38,28 +37,23 @@
 
 <style lang="scss" scoped>
 	.demo {
-		position: relative;
+		position: fixed;
+		width: 750rpx;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		background: #FFFFFF;
+		// padding-top: 20rpx;
+		// justify-content:space-between;
+		background-color: #FFFFFF;
 		font-size: 26rpx;
-
+		z-index: 999;
+		box-sizing: border-box;
 		.left {
-			float: left;
-			position: absolute;
-			width: max-content;
-			height: max-content;
-			top: 0;
-			bottom: 0;
-			left: 20rpx;
-			margin: auto;
-
+			margin-right: 170rpx;
 			image {
 				width: 16rpx;
 				height: 32rpx;
-				margin-right: 42rpx;
-				vertical-align: middle;
+				margin: 0 20rpx;
+				vertical-align: text-bottom;
 			}
 		}
 	}

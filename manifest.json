@@ -1,4 +1,7 @@
 {
+	"optimization":{
+		"subPackages":true
+	},
     "name" : "youShenghuo",
     "appid" : "",
     "description" : "",
@@ -61,7 +64,7 @@
         "setting" : {
             "urlCheck" : false,
             "es6" : true,
-            "minified" : false
+            "minified" : true
         },
         "usingComponents" : true
     },

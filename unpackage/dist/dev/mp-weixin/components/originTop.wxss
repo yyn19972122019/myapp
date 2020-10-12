@@ -25,7 +25,8 @@
 /* 透明度 */
 /* 文章场景相关 */
 .demo.data-v-29746624 {
-  position: relative;
+  width: 750rpx;
+  position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -33,24 +34,16 @@
   -webkit-align-items: center;
           align-items: center;
   background: #FBB03B;
+  z-index: 999;
+  box-sizing: border-box;
   font-size: 26rpx;
-}
-.demo .left.data-v-29746624 {
-  float: left;
-  position: absolute;
-  width: -webkit-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: max-content;
-  top: 0;
-  bottom: 0;
-  left: 20rpx;
-  margin: auto;
+  overflow: hidden;
 }
 .demo .left image.data-v-29746624 {
   width: 16rpx;
   height: 32rpx;
-  margin-right: 42rpx;
+  margin: 0 20rpx;
+  vertical-align: middle;
 }
 .demo .left text.data-v-29746624 {
   display: inline-block;
@@ -58,7 +51,6 @@
 }
 .demo .imgs.data-v-29746624 {
   position: absolute;
-  bottom: 30rpx;
   left: 75rpx;
   width: 27rpx;
   height: 27rpx;
@@ -66,12 +58,9 @@
 }
 .demo input.data-v-29746624 {
   box-sizing: border-box;
-  float: left;
-  position: absolute;
   padding-left: 50rpx;
-  top: 50rpx;
+  top: 0;
   bottom: 0;
-  left: 57rpx;
   border-radius: 26rpx;
   width: 500rpx;
   height: 55rpx;

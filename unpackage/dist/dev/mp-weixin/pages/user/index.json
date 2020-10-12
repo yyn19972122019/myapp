@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "个人信息",
   "usingComponents": {
-    "nav-top": "/components/navTop"
+    "top": "/components/navTop"
   }
 }

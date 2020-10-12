@@ -1,7 +1,7 @@
 <template>
 	<view class="father">
 		<Top :title='title' mode='true'></Top>
-		<view class="title_bac">
+		<view class="title_bac" :style="{'top':dem.top+'px'}">
 			<image src="../../static/yaoqing.png" class="redbac"></image>
 			<view class="title">
 				<text>邀请好友</text> <text>佣金提现</text>
@@ -64,13 +64,19 @@
 </template>
 
 <script>
-import Top from '../../components/navTop.vue'
+import Top from '@/components/navTop.vue';
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
-			Top
+			Top,
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'邀请好友成为VIP'
 			};
 		}
@@ -215,7 +221,7 @@ import Top from '../../components/navTop.vue'
 	}
 	.submit{
 		position: relative;
-		bottom: -1270rpx;
+		bottom: -1400rpx;
 		box-sizing: border-box;
 		margin-bottom : 30rpx;
 		width: 750rpx;

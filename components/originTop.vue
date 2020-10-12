@@ -4,8 +4,8 @@
             <view class="left" :style="'top:' + demo.top + 'px'">
                 <image src="../static/left.png" mode=""></image>
             </view>
-			<image src="../static/fans.png" class="imgs"></image>
-			<input placeholder="搜用户名" />
+			<image src="../static/fans.png" class="imgs" ></image>
+			<input placeholder="搜用户名"  />
         </view>
     </view>
 </template>
@@ -22,33 +22,36 @@
             }
         },
         created () {
-            const demo = uni.getMenuButtonBoundingClientRect()
-            this.demo.top = 27
-            this.demo.height = demo.height
+          this.demo.top = this.StatusBar
+		  console.log(this.StatusBar)
+          this.demo.height = this.CustomBar
         }
     }
 </script>
 
 <style lang="scss" scoped>
     .demo{
-        position: relative;
+		width: 750rpx;
+        position: fixed;
         display: flex;
         align-items: center;
         background: #FBB03B;
+		z-index: 999;
+		box-sizing: border-box;
         font-size: 26rpx;
+		overflow: hidden;
         .left{
-            float: left;
-            position: absolute;
-            width: max-content;
-            height: max-content;
-            top: 0;
-            bottom: 0;
-            left: 20rpx;
-            margin: auto;
+            // position: absolute;
+            // width: max-content;
+            // height: max-content;
+            // bottom: 0;
+            // left: 20rpx;
+            // margin: auto;
 			image{
 				width: 16rpx;
 				height: 32rpx;
-				margin-right: 42rpx;
+				margin: 0 20rpx;
+				vertical-align: middle;
 			}
 			text{
 				display: inline-block;
@@ -57,7 +60,6 @@
         }
 		.imgs{
 			position: absolute;
-			bottom: 30rpx;
 			left: 75rpx;
 			width: 27rpx;
 			height: 27rpx;
@@ -65,12 +67,11 @@
 		}
 		input{
 			box-sizing: border-box;
-			float: left;
-			position: absolute;
+			// position: absolute;
 			padding-left: 50rpx;
-			top: 50rpx;
+			top: 0;
 			bottom: 0;
-			left: 57rpx;
+			// margin-left: 57rpx;
 			border-radius: 26rpx;
 			width: 500rpx;
 			height: 55rpx;

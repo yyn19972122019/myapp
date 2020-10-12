@@ -27,6 +27,9 @@
 .bac.data-v-0ca91b30 {
   background-color: #FFFFFF;
 }
+.father.data-v-0ca91b30 {
+  position: fixed;
+}
 .father .title.data-v-0ca91b30 {
   height: 131rpx;
   border-bottom: 6rpx solid #39B54A;

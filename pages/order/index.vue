@@ -1,7 +1,11 @@
 <template>
-	<view class="father">
-		<navTop :title='title'></navTop>
-		<pay one='true'></pay>
+	<view>
+	<navTop :title='title' :isHeight="false" ></navTop>
+	<pay pay='true'></pay>
+	<!-- 优惠券 -->
+	<!-- <pay Discount='true'></pay> -->
+		<!-- <Bar></Bar> -->
+	<view class="father" :style="{'top':dem.top+'px'}">
 		<view class="title bac">
 			<view class="push">
 				<view>
@@ -67,18 +71,27 @@
 			</view>
 		</view>
 	</view>
+</view>
 </template>
 
 <script>
-import navTop from '../../components/navTop.vue'
+import  navTop from '@/components/navTop.vue'
+import Bar from "@/components/sundeheng-custom.vue"
 import Pay from '../../components/orderPay.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			navTop,
+			Bar,
 			Pay
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'确认订单'
 			};
 		}

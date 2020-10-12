@@ -1,7 +1,7 @@
 <template>
-	<view>
-		<navTop :title='title'/>
-		<view class="content">
+	<view style="overflow: hidden;">
+		<Top :title='title'/>
+		<view class="content" :style="{'margin-top':dem.top+'px'}">
 			<view class="items">
 				<view>
 					头像
@@ -79,14 +79,20 @@
 </template>
 
 <script>
-import navTop from '../../components/navTop.vue'
+import Top from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
-			navTop
+			Top
 		},
 		data() {
 			return {
-				title:'个人信息'
+				dem:{
+					top:0
+				},
+				title:'个人消息'
 			};
 		}
 	}

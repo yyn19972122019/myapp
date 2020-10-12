@@ -1,6 +1,72 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/Commodity/index",
+		"style": {
+			"navigationBarTitleText": "商品详情"
+		}
+	},
+	{
+		"path": "pages/user/index",
+		"style": {
+			"navigationBarTitleText": "个人信息"
+		}
+	},
+	{
+		"path": "pages/settlement/index",
+		"style": {
+			"navigationBarTitleText": "结算月报"
+		}
+	},
+	{
+		"path": "pages/myOrder/index",
+		"style": {
+			"navigationBarTitleText": "我的订单"
+		}
+	},
+	{
+		"path": "pages/envelopes/index",
+		"style": {
+			"navigationBarTitleText": "我的红包"
+		}
+	},
+	{
+		"path": "pages/integral/index",
+		"style": {
+			"navigationBarTitleText": "我的积分"
+		}
+	},
+	{
+		"path": "pages/gold/index",
+		"style": {
+			"navigationBarTitleText": "我的金币"
+		}
+	},
+	{
+		"path": "pages/profit/index",
+		"style": {
+			"navigationBarTitleText": "收益记录"
+		}
+	},
+	{
+		"path": "pages/Discount/index",
+		"style": {
+			"navigationBarTitleText": "我的优惠券"
+		}
+	},
+	{
+		"path": "pages/invitation/index",
+		"style": {
+			"navigationBarTitleText": "邀请好友"
+		}
+	},
+	{
+		"path": "pages/Monthly/index",
+		"style": {
+			"navigationBarTitleText": "结算月报"
+		}
+	},
+	{
 		"path": "pages/order/index",
 		"style": {
 			"navigationBarTitleText": "确认订单"
@@ -19,75 +85,9 @@
 		}
 	},
 	{
-		"path": "pages/invitation/index",
-		"style": {
-			"navigationBarTitleText": "邀请好友"
-		}
-	},
-	{
-		"path": "pages/Monthly/index",
-		"style": {
-			"navigationBarTitleText": "结算月报"
-		}
-	},
-	{
-		"path": "pages/Discount/index",
-		"style": {
-			"navigationBarTitleText": "我的优惠券"
-		}
-	},
-	{
-		"path": "pages/profit/index",
-		"style": {
-			"navigationBarTitleText": "收益记录"
-		}
-	},
-	{
-		"path": "pages/gold/index",
-		"style": {
-			"navigationBarTitleText": "我的金币"
-		}
-	},
-	{
-		"path": "pages/integral/index",
-		"style": {
-			"navigationBarTitleText": "我的积分"
-		}
-	},
-	{
-		"path": "pages/envelopes/index",
-		"style": {
-			"navigationBarTitleText": "我的红包"
-		}
-	},
-	{
 		"path": "pages/fans/index",
 		"style": {
 			"navigationBarTitleText": "粉丝"
-		}
-	},
-	{
-		"path": "pages/myOrder/index",
-		"style": {
-			"navigationBarTitleText": "我的订单"
-		}
-	},
-	{
-		"path": "pages/settlement/index",
-		"style": {
-			"navigationBarTitleText": "结算月报"
-		}
-	},
-	{
-		"path": "pages/user/index",
-		"style": {
-			"navigationBarTitleText": "个人信息"
-		}
-	},
-	{
-		"path": "pages/Receiving/index",
-		"style": {
-			"navigationBarTitleText": "收货地址"
 		}
 	},
 		{

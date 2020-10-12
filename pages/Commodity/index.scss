@@ -1,0 +1,104 @@
+.father{
+	width: 100%;
+	height: 100%;
+	  position: fixed;
+	    left: 0;
+	    top: 0;
+	    overflow:scroll
+}
+.banner{
+	image{
+		width: 100%;
+		height: 750rpx;
+	}
+}
+.banner_title{
+	image{
+		width:750rpx;
+		height: 80rpx;
+	}
+}
+.banner_detail{
+	padding:18rpx 35rpx;
+}
+.tuwen{
+	text-align:center;
+	line-height: 56rpx;
+}
+.woge{
+	margin-bottom: 30rpx;
+	text-align: center;
+	font-weight: 550;
+	color: #000000;
+	text{
+		margin-left: 10rpx;
+		font-size: 48rpx;
+	}
+}
+.me{
+	font-size: 48rpx;
+	text-align: center;
+	font-weight: 550;
+	color: $color;
+	text{
+		margin-right: 20rpx;
+	}
+}
+.hot_m{
+	height: 333rpx;
+	margin-bottom:140rpx;
+	image{
+		width: 100%;
+		height: 100%;
+	}
+}
+.botbar{
+	display: flex;
+	position: fixed;
+	box-sizing: border-box;
+	bottom: 0;
+	width: 750rpx;
+	background-color: #FFFFFF;
+	padding: 24rpx;
+	.icon{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 344rpx;
+		image{
+			width: 46rpx;
+			height: 40rpx;
+		}
+		.item{
+			view{
+				font-size: 22rpx;
+				color: #808080;
+			}
+		}
+	}
+	.sub{
+		display: flex;
+		align-items: center;
+		view{
+			box-sizing: border-box;
+			width: 191rpx;
+			line-height: 55rpx;
+			padding: 15rpx;
+			text-align: center;
+			border-radius: 16rpx;
+			font-size: 22rpx;
+		}
+		view:first-child{
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+			background-color: #fbb03b;
+			color: #000000;
+		}
+		view:last-child{
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+			background-color:$color;
+			color: #FFFFFF;
+		}
+	}
+}

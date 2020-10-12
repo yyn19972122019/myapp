@@ -1,7 +1,7 @@
 <template>
 	<view class="father">
 		<Top :title='title'></Top>
-		<view class="title">
+		<view class="title" :style="{'margin-top':dem.top+'px'}">
 			<view class="first">
 				<text>佣金提现</text>
 				<view></view>
@@ -84,11 +84,17 @@
 <script>
 import Top from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			Top
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'结算月报'
 			};
 		}
@@ -97,6 +103,7 @@ import Top from '../../components/navTop.vue'
 
 <style lang="scss" scoped>
 	.father{
+		overflow: hidden;padding-bottom: 130rpx;
 		background-color: #FFFFFF;
 	}
 .title{
@@ -109,7 +116,7 @@ import Top from '../../components/navTop.vue'
 		margin-right: 50rpx;
 	}
 	.first{
-		width: 120rpx;
+		width: 20%;
 		text{
 			color: #39b54a;
 		}

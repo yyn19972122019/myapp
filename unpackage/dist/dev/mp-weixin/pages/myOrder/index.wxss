@@ -31,11 +31,14 @@
   margin-bottom: 31rpx;
 }
 .father .title text.data-v-59e62b5c {
-  margin-right: 70rpx;
+  margin-right: 60rpx;
 }
 .father .title text.data-v-59e62b5c:first-child {
   color: #39B54A;
   border-bottom: 6rpx solid #39B54A;
+}
+.father .title text.data-v-59e62b5c:last-child {
+  margin-right: 0;
 }
 .content.data-v-59e62b5c {
   font-size: 24rpx;
@@ -76,7 +79,7 @@
 }
 .content .detail .list_right .lists text.data-v-59e62b5c {
   display: inline-block;
-  width: 104rpx;
+  width: 23%;
   padding: 5rpx 16rpx;
   border: 1rpx solid #F2F2F2;
   text-align: center;

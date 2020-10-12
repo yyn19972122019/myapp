@@ -1,7 +1,7 @@
 <template>
-	<view>
-		<navTop :title='title'/>
-		<view class="father">
+	<view style="overflow: hidden;padding-bottom: 130rpx;">
+		<Top :title='title'/>
+		<view class="father" :style="{'margin-top':dem.top+'px'}">
 			<view class="title">
 				<text>佣金提现</text>
 				<text>余额提现</text>
@@ -49,13 +49,19 @@
 </template>
 
 <script>
-import navTop from '../../components/navTop.vue'
+import Top from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
-			navTop
+			Top
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'结算月报'
 			};
 		}

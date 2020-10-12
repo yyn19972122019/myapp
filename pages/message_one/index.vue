@@ -1,7 +1,7 @@
 <template>
-	<view>
+	<view style="overflow: hidden;padding-bottom: 130rpx;">
 		<Top :title='title'></Top>
-		<view class="title">
+		<view class="title" :style="{'margin-top':dem.top+'px'}">
 			<view class="first">
 				<text>普通佣金</text>
 				<view></view>
@@ -93,11 +93,17 @@
 <script>
 import Top from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			Top
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'消息'
 			};
 		}

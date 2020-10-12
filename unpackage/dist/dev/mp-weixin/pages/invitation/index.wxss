@@ -166,7 +166,7 @@
 }
 .title_bac .submit.data-v-91228556 {
   position: relative;
-  bottom: -1270rpx;
+  bottom: -1400rpx;
   box-sizing: border-box;
   margin-bottom: 30rpx;
   width: 750rpx;

@@ -1,7 +1,7 @@
 <template>
 	<view class="father">
 		<Top :title='title' mode='true' mingxi='true'></Top>
-		<view class="title">
+		<view class="title" :style="{'margin-top':dem.top+'px'}">
 			<view class="item_one">
 				<view>
 					可提现(元)<text>0</text>
@@ -109,11 +109,17 @@
 <script>
 import Top from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			Top
 		},
 		data() {
 			return {
+				dem:{
+					top:0
+				},
 				title:'收益记录'
 			};
 		}
@@ -123,6 +129,7 @@ import Top from '../../components/navTop.vue'
 <style lang="scss" scoped>
 .father{
 	font-size: 24rpx;
+	overflow: hidden;padding-bottom: 130rpx;
 }
 .title{
 	height: 283rpx;

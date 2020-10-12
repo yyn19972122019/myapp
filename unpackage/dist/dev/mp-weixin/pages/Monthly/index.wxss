@@ -25,6 +25,8 @@
 /* 透明度 */
 /* 文章场景相关 */
 .father.data-v-1c6db487 {
+  overflow: hidden;
+  padding-bottom: 130rpx;
   background-color: #FFFFFF;
 }
 .title.data-v-1c6db487 {
@@ -40,7 +42,7 @@
   margin-right: 50rpx;
 }
 .title .first.data-v-1c6db487 {
-  width: 120rpx;
+  width: 20%;
 }
 .title .first text.data-v-1c6db487 {
   color: #39b54a;
