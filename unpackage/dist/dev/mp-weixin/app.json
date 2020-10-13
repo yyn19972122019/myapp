@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/Commodity/index",
+    "pages/home/index",
     "pages/user/index",
+    "pages/fans/index",
+    "pages/Commodity/index",
     "pages/settlement/index",
     "pages/myOrder/index",
     "pages/envelopes/index",
@@ -14,7 +16,6 @@
     "pages/order/index",
     "pages/message_one/index",
     "pages/message/index",
-    "pages/fans/index",
     "pages/index/index"
   ],
   "subPackages": [],

@@ -39,12 +39,29 @@
   box-sizing: border-box;
 }
 .demo .left.data-v-547a012d {
-  margin-right: 170rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .demo .left image.data-v-547a012d {
   width: 16rpx;
   height: 32rpx;
   margin: 0 20rpx;
-  vertical-align: text-bottom;
+}
+.demo .right.data-v-547a012d {
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 0 200rpx;
 }
 

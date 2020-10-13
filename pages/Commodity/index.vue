@@ -1,7 +1,10 @@
 <template>
 	<view>
 	  <navTop :title='title'></navTop>
-	  <Pay share='true'></Pay>
+	  <!-- 分享 -->
+	  <!-- <Pay share='true'></Pay> -->
+	  <!-- 购买 -->
+	   <Pay shop='true'></Pay>
 	  <view class="father" :style="{'top':dem.top+'px'}">
 	  <view class="banner">
 	  	<image src="../../static/banner.png" mode=""></image>

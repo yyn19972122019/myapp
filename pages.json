@@ -1,15 +1,27 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
-		"path": "pages/Commodity/index",
+		"path": "pages/home/index",
 		"style": {
-			"navigationBarTitleText": "商品详情"
+			"navigationBarTitleText": "主页"
 		}
 	},
 	{
 		"path": "pages/user/index",
 		"style": {
 			"navigationBarTitleText": "个人信息"
+		}
+	},
+	{
+		"path": "pages/fans/index",
+		"style": {
+			"navigationBarTitleText": "粉丝"
+		}
+	},
+	{
+		"path": "pages/Commodity/index",
+		"style": {
+			"navigationBarTitleText": "商品详情"
 		}
 	},
 	{
@@ -82,12 +94,6 @@
 		"path": "pages/message/index",
 		"style": {
 			"navigationBarTitleText": "消息"
-		}
-	},
-	{
-		"path": "pages/fans/index",
-		"style": {
-			"navigationBarTitleText": "粉丝"
 		}
 	},
 		{

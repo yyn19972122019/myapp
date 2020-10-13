@@ -2,7 +2,6 @@
 	import Vue from 'vue'
 	export default {
 		  onLaunch: function() {
-		            console.log('App Launch')
 		            uni.getSystemInfo({
 		                success: function(e) {
 		                    // #ifndef MP
@@ -11,6 +10,7 @@
 		                        Vue.prototype.CustomBar = e.statusBarHeight + 50;
 		                    } else {
 		                        Vue.prototype.CustomBar = e.statusBarHeight + 45;
+								
 		                    };
 		                    // #endif
 		
