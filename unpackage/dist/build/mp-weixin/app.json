@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/homeTwo/index",
+    "pages/settlement/index",
+    "pages/user/index",
+    "pages/fans/index",
+    "pages/home/index",
+    "pages/Commodity/index",
+    "pages/myOrder/index",
+    "pages/envelopes/index",
+    "pages/integral/index",
+    "pages/gold/index",
+    "pages/profit/index",
+    "pages/Discount/index",
+    "pages/invitation/index",
+    "pages/Monthly/index",
+    "pages/order/index",
+    "pages/message_one/index",
+    "pages/message/index",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F2F2F2",
+    "backgroundColor": "#F0AD4E"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

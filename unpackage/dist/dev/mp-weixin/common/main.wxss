@@ -138,6 +138,7 @@ textarea {
 page,
 page {
     background-color: #F2F2F2;
+	height: 100%;
 }
 .model_mask {
     position: fixed;

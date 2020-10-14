@@ -24,16 +24,15 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-page.data-v-71e217db {
-  background-color: #FFFFFF;
-}
 .father.data-v-71e217db {
-  background-color: #FFFFFF;
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 180rpx;
 }
 .father .topbar.data-v-71e217db {
   color: #FFFFFF;
@@ -50,7 +49,6 @@ page.data-v-71e217db {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  margin-bottom: 47rpx;
 }
 .father .topbar .bar.data-v-71e217db {
   text-align: center;
@@ -69,11 +67,13 @@ page.data-v-71e217db {
   display: flex;
   -webkit-justify-content: space-around;
           justify-content: space-around;
+  background-color: #FFFFFF;
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-bottom: 16rpx;
 }
 .father .list .item.data-v-71e217db {
   font-size: 28rpx;
@@ -82,7 +82,7 @@ page.data-v-71e217db {
   margin-bottom: 47rpx;
 }
 .father .list .item image.data-v-71e217db {
-  width: 140rpx;
+  width: 166rpx;
   height: 127rpx;
 }
 .father .chose.data-v-71e217db {
@@ -94,6 +94,8 @@ page.data-v-71e217db {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
 }
 .father .chose .chose_item.data-v-71e217db {
   color: #999999;
@@ -105,7 +107,6 @@ page.data-v-71e217db {
   -webkit-align-items: center;
           align-items: center;
   width: 134rpx;
-  border-right: 6rpx solid #EEEEEE;
 }
 .father .chose .chose_item image.data-v-71e217db {
   width: 17rpx;
@@ -114,15 +115,63 @@ page.data-v-71e217db {
   margin-left: 10rpx;
 }
 .father .chose .chose_item view.data-v-71e217db {
-  margin-left: 13rpx;
+  margin-left: 21rpx;
 }
 .father .chose .chose_item.data-v-71e217db:last-child {
   border: none;
+}
+.father .shops.data-v-71e217db {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.father .shop_detail.data-v-71e217db {
+  font-size: 24rpx;
+  width: 350rpx;
+  color: #4d4d4d;
+  background-color: #FFFFFF;
+  margin-bottom: 40rpx;
+  padding: 15rpx;
+  border-radius: 12rpx;
+}
+.father .shop_detail image.data-v-71e217db {
+  width: 100%;
+  height: 330rpx;
+}
+.father .shop_detail .toast.data-v-71e217db {
+  margin-bottom: 12rpx;
+}
+.father .shop_detail .total.data-v-71e217db {
+  overflow: hidden;
+}
+.father .shop_detail .total text.data-v-71e217db {
+  font-size: 24rpx;
+  color: #9fa0a0;
+}
+.father .shop_detail .total text.data-v-71e217db:last-child {
+  font-size: 36rpx;
+  color: #000000;
+  float: right;
+}
+.father .shop_detail.data-v-71e217db:nth-child(2n+0) {
+  margin-left: 12rpx;
 }
 .father .gun.data-v-71e217db {
   width: 100%;
   height: 5rpx;
   background-color: #FFFFFF;
+}
+.father .gun_one.data-v-71e217db {
+  float: right;
+  height: 40rpx;
+  width: 3rpx;
+  background-color: #999999;
+}
+.father .hit.data-v-71e217db {
+  height: 70rpx;
 }
 .father .greens.data-v-71e217db {
   color: #39b54a;

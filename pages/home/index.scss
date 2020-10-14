@@ -1,13 +1,13 @@
-page{
-	background-color: #FFFFFF;
-}
+
 .father{
-	background-color: #FFFFFF;
 	position: fixed;
 	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 180rpx;
 	.topbar{
 		color: #FFFFFF;
 		font-size: 24rpx;
@@ -17,7 +17,6 @@ page{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 47rpx;
 		.bar{
 			text-align: center;
 		}
@@ -33,14 +32,16 @@ page{
 	.list{
 		display: flex;
 		justify-content: space-around;
+		background-color: #FFFFFF;
 		align-items: center;
 		flex-wrap: wrap;
+		margin-bottom: 16rpx;
 		.item{
 			font-size: 28rpx;
 			color: #666666;
 			text-align: center;
 			image{
-				width: 140rpx;
+				width: 166rpx;
 				height: 127rpx;
 			}
 			margin-bottom: 47rpx;
@@ -50,13 +51,14 @@ page{
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		margin-bottom: 20rpx;
+		font-size: 28rpx;
 		.chose_item{
 			color: #999999;
 			display: flex;
 			height: 60rpx;
 			align-items: center;
 			width: 134rpx;
-			border-right: 6rpx solid #EEEEEE;
 			image{
 				width: 17rpx;
 				height: 13rpx;
@@ -64,17 +66,62 @@ page{
 				margin-left: 10rpx;
 			}
 			view{
-				margin-left: 13rpx;
+				margin-left: 21rpx;
 			}
+			
 		}
 		.chose_item:last-child{
 			border: none;
 		}
 	}
+	.shops{
+		display: flex;
+		justify-content: space-between;
+	}
+	.shop_detail{
+		font-size: 24rpx;
+		width:350rpx;
+		color: #4d4d4d;
+		background-color: #FFFFFF;
+		margin-bottom:40rpx;
+		padding: 15rpx;
+		border-radius: 12rpx;
+		image{
+			width: 100%;
+			height: 330rpx;
+		}
+		.toast{
+			margin-bottom: 12rpx;
+		}
+		.total{
+			overflow: hidden;
+			text{
+				font-size: 24rpx;
+				color: #9fa0a0;
+			}
+			text:last-child{
+				font-size: 36rpx;
+				color: #000000;
+				float: right;
+			}
+		}
+	}
+	.shop_detail:nth-child(2n+0){
+		margin-left: 12rpx;
+	}
 	.gun{
 		width: 100%;
 		height: 5rpx;
 		background-color: #FFFFFF;
+	}
+	.gun_one{
+		float: right;
+		height: 40rpx;
+		width: 3rpx;
+		background-color: #999999;
+	}
+	.hit{
+		height: 70rpx;
 	}
 	.greens{
 		color: #39b54a;

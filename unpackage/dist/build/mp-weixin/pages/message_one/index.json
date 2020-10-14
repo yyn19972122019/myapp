@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "消息1",
+  "usingComponents": {
+    "top": "/components/navTop"
+  }
+}
