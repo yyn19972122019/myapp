@@ -3,24 +3,25 @@
 		<!-- 确认订单 支付方式 -->
 	  <view class="content" v-if="pay">
 	  	<view class="close">
-	  		<image src="../static/close.png" mode=""></image>
+	  		<image src="../static/close.png" mode="" @click="closes()"></image>
 	  	</view>
 		<view class="title">
 			请选择支付方式
 		</view>
 		<view class="detail">
-			<view class="item">
+			<view class="item" @click="choose(1)">
 				<view>
 					<image src="../static/weixin.png" mode=""></image>
 					微信支付
 				</view>
+				<image :src="choseIndex == 1?require('../static/red-gou.png'):require('../static/red-none.png')" mode="" ></image>
 			</view>
-			<view class="item">
+			<view class="item" @click="choose(-1)">
 				<view>
 					<image src="../static/zhifubao.png" mode=""></image>
 					支付宝
 				</view>
-				<image src="../static/red-gou.png" mode="" ></image>
+				<image :src="choseIndex == -1?require('../static/red-gou.png'):require('../static/red-none.png')" mode="" ></image>
 			</view>
 		</view>
 		<view class="sub">
@@ -30,7 +31,7 @@
 	  <!-- 确认订单 优惠券 -->
 	  <view class="Dcontent" v-if="Discount">
 	  	<view class="close">
-	  		<image src="../static/close.png" mode=""></image>
+	  		<image src="../static/close.png" mode="" @click="closes()"></image>
 	  	</view>
 		<view class="title">
 			优惠券
@@ -69,7 +70,7 @@
 					</view>
 	  			</view>
 	  		</view>
-	  		<view class="sub" style="background-color: #e6e6e6;color: #666666;">
+	  		<view class="sub" style="background-color: #e6e6e6;color: #666666;" @click="closes()">
 	  			取消
 	  		</view>
 	  </view>
@@ -77,7 +78,7 @@
 	  <view class="Dcontent" v-if="shop" style="height: 918rpx; padding: 0;">
 	  	<view style="padding: 26rpx;">
 			<view class="close">
-				<image src="../static/close.png" mode=""></image>
+				<image src="../static/close.png" mode="" @click="closes()"></image>
 			</view>
 			 <view class="num">
 			 	<image src="../static/banner.png" mode=""></image>
@@ -115,9 +116,22 @@
 	    props:['pay','Discount','share','shop'],
 		data() {
 			return {
-				
+				choseIndex:-1
 			};
-		}
+		},
+		methods:{
+			// 关闭
+			closes(){
+				this.$emit('changeDate',false)
+			},
+			choose(index){
+				if(index==1){
+					this.choseIndex = 1
+				}else{
+					this.choseIndex = -1
+				}
+			}
+		},
 	}
 </script>
 

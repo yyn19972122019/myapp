@@ -7,21 +7,33 @@
 		}
 	},
 	{
-		"path": "pages/message/index",
+		"path": "pages/order/index",
 		"style": {
-			"navigationBarTitleText": "消息"
+			"navigationBarTitleText": "确认订单"
 		}
 	},
 	{
-		"path": "pages/settlement/index",
+		"path": "pages/home/index",
 		"style": {
-			"navigationBarTitleText": "结算月报"
+			"navigationBarTitleText": "主页"
 		}
 	},
 	{
-		"path": "pages/user/index",
+		"path": "pages/Discount/index",
 		"style": {
-			"navigationBarTitleText": "个人信息"
+			"navigationBarTitleText": "我的优惠券"
+		}
+	},
+	{
+		"path": "pages/profit/index",
+		"style": {
+			"navigationBarTitleText": "收益记录"
+		}
+	},
+	{
+		"path": "pages/gold/index",
+		"style": {
+			"navigationBarTitleText": "我的金币"
 		}
 	},
 	{
@@ -31,9 +43,21 @@
 		}
 	},
 	{
-		"path": "pages/home/index",
+		"path": "pages/user/index",
 		"style": {
-			"navigationBarTitleText": "主页"
+			"navigationBarTitleText": "个人信息"
+		}
+	},
+	{
+		"path": "pages/message/index",
+		"style": {
+			"navigationBarTitleText": "消息"
+		}
+	},
+	{
+		"path": "pages/settlement/index",
+		"style": {
+			"navigationBarTitleText": "结算月报"
 		}
 	},
 	{
@@ -61,24 +85,6 @@
 		}
 	},
 	{
-		"path": "pages/gold/index",
-		"style": {
-			"navigationBarTitleText": "我的金币"
-		}
-	},
-	{
-		"path": "pages/profit/index",
-		"style": {
-			"navigationBarTitleText": "收益记录"
-		}
-	},
-	{
-		"path": "pages/Discount/index",
-		"style": {
-			"navigationBarTitleText": "我的优惠券"
-		}
-	},
-	{
 		"path": "pages/invitation/index",
 		"style": {
 			"navigationBarTitleText": "邀请好友"
@@ -88,12 +94,6 @@
 		"path": "pages/Monthly/index",
 		"style": {
 			"navigationBarTitleText": "结算月报"
-		}
-	},
-	{
-		"path": "pages/order/index",
-		"style": {
-			"navigationBarTitleText": "确认订单"
 		}
 	},
 	{

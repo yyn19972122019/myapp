@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<Top></Top>
-		<view class="title">
+		<view class="title" :style="{'top':dem.top+'px'}">
 			我的粉丝: 02 
 			<text>|</text>
 			我的邀请人: 爱上优生活
@@ -67,12 +67,15 @@
 <script>
 import Top from '../../components/originTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			Top
 		},
 		data() {
 			return {
-				
+				dem:{top:0}
 			};
 		}
 	}

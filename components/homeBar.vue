@@ -1,36 +1,38 @@
 <template>
-	<view class='father'>
-		<view class="item">
-			<image src="../static/home.png" mode=""></image>
-			<view>首页</view>
-		</view>
-		<view class="item">
-			<image src="../static/shop.png" mode=""></image>
-			<view>购物导航</view>
-		</view>
-		<view class="item">
-			<image src="../static/vip.png" mode=""></image>
-			<view>vip特区</view>
-		</view>
-		<view class="item">
-			<image src="../static/home-user.png" mode=""></image>
-			<view>我的</view>
+	<view class='bar'>
+		<view class="item" v-for="(item,i) in list" :key='i' @click="act(i)">
+			<image :src="curIndex == i ?item.picA:item.pic"></image>
+			<view :class="[i==curIndex?'active':'']">{{item.title}}</view>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
+		created(){
+			
+		},
 		data() {
 			return {
-				
+				list:[
+					{title:'首页',pic:require('../static/house.png'),picA:require('../static/home_active.png')},
+					{title:'购物导航',pic:require('../static/shop.png'),picA:require('../static/shop_active.png')},
+					{title:'VIP特区',pic:require('../static/vip.png'),picA:require('../static/vip_active.png')},
+					{title:'我的',pic:require('../static/home-user.png'),picA:require('../static/user_active.png')},
+					],
+					curIndex:0
 			};
+		},
+		methods:{
+			act(i){
+				this.curIndex = i
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-.father{
+.bar{
 	position: fixed;
 	bottom: 0;
 	width: 750rpx;
@@ -50,9 +52,9 @@
 			width: 37rpx;
 			height: 35rpx;
 		}
-		view:first-child{
-			color: #39b54a;
-		}
+	}
+	.active{
+		color: #39b54a;
 	}
 }
 </style>

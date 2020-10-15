@@ -2,8 +2,8 @@
 	<view class="prohibition">
 		<view class="demo" :style="'height:' +  demo.height + 'px;' +'padding-top:' +  demo.top + 'px;' + 'line-height:' + demo.height + 'px;'+'padding-bottom:10rpx;'+'color:'+mycolor+';'+'background:'+mybackground+';'">
 			<view class="left">
-				<image src="../static/top-left.png" mode=""></image>
-				<text>关闭</text>
+				<image src="../static/top-left.png" mode="" @tap="back"></image>
+				<text @click="backhome">关闭</text>
 			</view>
 			<view class="right" :style="{'justify-content':mode && mingxi?'space-around':''}">
 				<text>{{title}}</text>
@@ -34,6 +34,14 @@
 			if (this.mode) {
 				this.mycolor = '#ffff'
 				this.mybackground = '#fbb03b'
+			}
+		},
+		methods:{
+			back(){
+				uni.navigateBack(1)
+			},
+			backhome(){
+				uni.navigateTo({url:'/pages/homeTwo/index'})
 			}
 		}
 	}

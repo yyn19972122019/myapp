@@ -1,10 +1,9 @@
 <template>
 	<view>
 	<navTop :title='title' :isHeight="false" ></navTop>
-	<pay pay='true'></pay>
+	<pay pay='true' @changeDate='changeDate' v-if="pay"></pay>
 	<!-- 优惠券 -->
-	<!-- <pay Discount='true'></pay> -->
-		<!-- <Bar></Bar> -->
+	<pay Discount='true' @changeDate='changeDate' v-if="Discount"></pay>
 	<view class="father" :style="{'top':dem.top+'px'}">
 		<view class="title bac">
 			<view class="push">
@@ -34,7 +33,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="bac Discount">
+		<view class="bac Discount" @click="Dis">
 			<view>
 				优惠券
 			</view>
@@ -65,7 +64,7 @@
 			<view class="pay">
 				实付款:<text>￥198(包邮)</text>
 			</view>
-			<view class="submit">
+			<view class="submit" @click="buy">
 				去付款
 				<image src="../../static/pay-right.png"></image>
 			</view>
@@ -92,8 +91,22 @@ import Pay from '../../components/orderPay.vue'
 				dem:{
 					top:0
 				},
-				title:'确认订单'
+				title:'确认订单',
+				pay:false,
+				Discount:false
 			};
+		},
+		methods:{
+			buy(){
+				this.pay = true
+			},
+			Dis(){
+				this.Discount = true
+			},
+			changeDate(){
+				this.pay = false
+				this.Discount = false
+			}
 		}
 	}
 </script>

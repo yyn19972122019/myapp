@@ -1,5 +1,8 @@
 
 .father{
+	.bac{
+		background-color: #c1272d;
+	}
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -128,7 +131,7 @@
 					}
 					.pt_img{
 						image{
-							width: 160rpx;
+							width: 120rpx;
 							height:160rpx;
 						}
 					}
@@ -162,6 +165,7 @@
 			align-items: center;
 			margin-bottom: 16rpx;
 			.time_item{
+				padding: 16rpx;
 				image{
 					width: 148rpx;
 					height: 83rpx;
@@ -219,7 +223,6 @@
 							line-height: 45rpx;
 							background-color: rgb(234,82,9);
 							text-align: center;
-							padding: 16rpx;
 							border-radius: 36rpx;
 							color: #FFFFFF;
 							font-size: 24rpx;

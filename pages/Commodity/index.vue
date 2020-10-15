@@ -2,9 +2,9 @@
 	<view>
 	  <navTop :title='title'></navTop>
 	  <!-- 分享 -->
-	  <!-- <Pay share='true'></Pay> -->
+	  <Pay share='true' v-if='share' @changeDate='changeDate'></Pay>
 	  <!-- 购买 -->
-	   <Pay shop='true'></Pay>
+	   <Pay shop='true' v-if='Buy' @changeDate='changeDate'></Pay>
 	  <view class="father" :style="{'top':dem.top+'px'}">
 	  <view class="banner">
 	  	<image src="../../static/banner.png" mode=""></image>
@@ -44,8 +44,8 @@
 			</view>
 	  	</view>
 		<view class="sub">
-			<view>立即分享</view>
-			<view>立即购买</view>
+			<view @click="shares()">立即分享</view>
+			<view @click="buy()">立即购买</view>
 		</view>
 	  </view>
 	</view>
@@ -68,8 +68,22 @@ import Pay from '@/components/orderPay.vue'
 				title:'商品详情',
 				dem:{
 					top:0
-				}
+				},
+				share:false,
+				Buy:false
 			};
+		},
+		methods:{
+			shares(){
+				this.share = true
+			},
+			buy(){
+			 this.Buy = true
+			},
+			changeDate(type){
+				this.share = type
+				this.Buy = type
+			}
 		}
 	}
 </script>

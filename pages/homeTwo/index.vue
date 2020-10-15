@@ -67,7 +67,7 @@
 						<text></text>
 					</view>
 					<view class="putao">
-						<view class="pt_item">
+						<view class="pt_item" @tap='godetail'>
 							<view class="pt_toast">
 								<view>新疆吐鲁番葡萄干</view>
 								<view><text>会员:</text><text>￥98</text></view>
@@ -77,7 +77,7 @@
 								<image src="../../static/Toast_one.png" mode=""></image>
 							</view>
 						</view>
-						<view class="pt_item">
+						<view class="pt_item" @tap='godetail'>
 							<view class="pt_toast">
 								<view>新疆吐鲁番葡萄干</view>
 								<view><text>会员:</text><text>￥98</text></view>
@@ -87,7 +87,7 @@
 								<image src="../../static/Toast_two.png" mode=""></image>
 							</view>
 						</view>
-						<view class="pt_item">
+						<view class="pt_item" @tap='godetail'>
 							<view class="pt_toast">
 								<view>新疆吐鲁番葡萄干</view>
 								<view><text>会员:</text><text>￥98</text></view>
@@ -97,7 +97,7 @@
 								<image src="../../static/Toast_three.png" mode=""></image>
 							</view>
 						</view>
-						<view class="pt_item">
+						<view class="pt_item" @tap='godetail'>
 							<view class="pt_toast">
 								<view>新疆吐鲁番葡萄干</view>
 								<view><text>会员:</text><text>￥98</text></view>
@@ -110,8 +110,7 @@
 					</view>
 				</view>
 			</view>
-			
-	<Bar></Bar>
+		
 		<view class="detail">
 			<view class="detail_title">
 				<image src="../../static/miaosha.png" mode=""></image>
@@ -121,25 +120,11 @@
 				</view>
 			</view>
 			<view class="time">
-				<view class="time_item">
-					<view>10:00</view>
-					<view>已开抢</view>
+				<view class="time_item" v-for="(item,i) in time_list" :key='i' :class="[timeIndex==i?'bac':'']" @click="activeTime(i)">
+					<view :style="{'color':timeIndex == i?'#FFFFFF':''}">{{item.time}}</view>
+					<view :style="{'color':timeIndex == i?'#FFFFFF':''}">{{item.title}}</view>
 				</view>
-				<view class="time_item">
-					<view>10:00</view>
-					<view>已开抢</view>
-				</view>
-				<view class="time_item">
-					<image src="../../static/time_qianggou.png" mode=""></image>
-				</view>
-				<view class="time_item">
-					<view>10:00</view>
-					<view>已开抢</view>
-				</view>
-				<view class="time_item">
-					<view>10:00</view>
-					<view>已开抢</view>
-				</view>
+
 			</view>
 			<view class="shops">
 				<view class="shops_item">
@@ -193,6 +178,7 @@
 			</view>
 		</view>
 	</view>
+	<Bar></Bar>
 </view>
 </template>
 
@@ -209,8 +195,30 @@ import Bar from '@/components/homeBar.vue'
 		},
 		data() {
 			return {
-				dem:{top:0}
+				dem:{top:0},
+				time_list:[
+					{time:'10:00',title:'已开抢'},
+					{time:'10:00',title:'已开抢'},
+					{time:'10:00',title:'已开抢'},
+					{time:'10:00',title:'已开抢'},
+					{time:'10:00',title:'已开抢'},
+				],
+				timeIndex:2
 			};
+		},
+		methods:{
+			// 选中时间
+			activeTime(i){
+				this.timeIndex = i
+			},
+			godetail(){
+				 uni.navigateTo({
+				            // url: 'test?id=1&name=uniapp'  c传递参数
+				
+				            url:"/pages/Commodity/index"
+				
+				        })
+			}
 		}
 	}
 </script>
