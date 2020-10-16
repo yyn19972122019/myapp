@@ -3,26 +3,11 @@
 		<Top></Top>
 		<view class="father" :style="{'top':dem.top+'px'}">
 			<view class="topbar">
-				<view class="bar">
-					<text>商城精选</text>
+				<view class="bar" v-for="(item,i) in top_list" :key='i' @click="choose(i)">
+					<text>{{item.title}}</text>
+					<view class='gun' v-if="choseIndex == i"></view>
 				</view>
-				<view class="bar">
-					<text>自营商品</text>
-				</view>
-				<view class="bar">
-					<text>限时抢购</text>
-				</view>
-				<view class="bar">
-					<text>居家百货</text>
-					<view class='gun'></view>
-				</view>
-				<view class="bar">
-					<text>新疆特产</text>
-				</view>
-				<view class="bar">
-					<text>母婴</text>
-					<image src="../../static/down.png" mode=""></image>
-				</view>
+				<image src="../../static/down.png" mode=""></image>
 			</view>
 			<view class="list">
 				<view class="item">
@@ -135,8 +120,22 @@ import Bar from '@/components/homeBar.vue'
 		},
 		data() {
 			return {
-				dem:{top:0}
+				dem:{top:0},
+				top_list:[
+					{title:'商城精选'},
+					{title:'自营商品'},
+					{title:'限时抢购'},
+					{title:'居家百货'},
+					{title:'新疆特产'},
+					{title:'母婴'},
+				],
+				choseIndex:0
 			};
+		},
+		methods:{
+			choose(i){
+				this.choseIndex = i
+			}
 		}
 	}
 </script>

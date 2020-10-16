@@ -96,9 +96,9 @@
 			 <view class="count">
 			 	数量
 				<view>
-					<text>-</text>
-					<input type="text" value="1" />
-					<text>+</text>
+					<text @click="delte">-</text>
+					<input type="text" value="1"  v-model="shop_num"/>
+					<text @click="push">+</text>
 				</view>
 			 </view>
 		</view>
@@ -116,7 +116,8 @@
 	    props:['pay','Discount','share','shop'],
 		data() {
 			return {
-				choseIndex:-1
+				choseIndex:-1,
+				shop_num:1
 			};
 		},
 		methods:{
@@ -129,6 +130,15 @@
 					this.choseIndex = 1
 				}else{
 					this.choseIndex = -1
+				}
+			},
+			// 商品数量
+			push(){
+				this.shop_num++
+			},
+			delte(){
+				if(this.shop_num>1){
+					this.shop_num--
 				}
 			}
 		},
@@ -218,6 +228,7 @@
 		text-align: center;
 	}
 	.Disdetail{
+		font-size: 30rpx;
 		width: 520rpx;
 		margin: 0 auto;
 		display: flex;

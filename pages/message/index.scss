@@ -1,37 +1,4 @@
-.title{
-	padding: 20rpx;
-	line-height: 80rpx;
-	background-color: #FFFFFF;
-	display: flex;
-	margin-bottom: 12rpx;
-	font-size: 24rpx;
-	view{
-		margin-right: 30rpx;
-	}
-	.first{
-		font-size: 30rpx;
-		width: 120rpx;
-		text{
-			color: #39b54a;
-		}
-		view{
-		  width: 100%;
-		  height: 6rpx;
-		  background-color: #39b54a;
-		}
-	}
-}
-.mt_gun{
-	display: flex;
-	align-items: center;
-	.gun{
-		width: 3rpx;
-		display: inline-block;
-		height: 21rpx;
-		background-color: grey;
-		vertical-align: middle;
-	}
-}
+
 .clock{
 	display: flex;
 	align-items: center;

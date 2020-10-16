@@ -1,7 +1,7 @@
 <template>
-	<view class="father">
+	<view style="overflow: hidden;">
 		<navTop :title='title'></navTop>
-		<view class="content">
+		<view class="content" :style="{'margin-top':dem.top+'px'}">
 			<view class="item bac">
 				<view class="name">
 					收货人
@@ -31,7 +31,7 @@
 			</view>
 			<view class="home bac">
 				<text>设置为默认地址</text>
-				<image src="../../static/btnClose.png"></image>
+				<image :src="chose?require('../../static/open.png'):require('../../static/btnClose.png')" @click="choseShow"></image>
 			</view>
 			<view class="submit">
 				保存
@@ -43,13 +43,25 @@
 <script>
 import navTop from '../../components/navTop.vue'
 	export default {
+		created(){
+			this.dem.top = this.CustomBar
+		},
 		components:{
 			navTop
 		},
 		data() {
 			return {
-				title:'添加收货地址'
+				dem:{
+					top:0
+				},
+				title:'添加收货地址',
+				chose:false
 			};
+		},
+		methods:{
+			choseShow(){
+				this.chose = !this.chose
+			}
 		}
 	}
 </script>

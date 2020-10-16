@@ -50,8 +50,8 @@
 					淘宝授权
 					<text>访问淘宝页面无需输入账号密码</text>
 				</view>
-				<view>
-					<image src="../../static/open.png"></image>
+				<view @click="choseShow">
+					<image :src="chose?require('../../static/open.png'):require('../../static/btnClose.png')"></image>
 				</view>
 			</view>
 			<view class="items">
@@ -92,8 +92,14 @@ import Top from '../../components/navTop.vue'
 				dem:{
 					top:0
 				},
-				title:'个人消息'
+				title:'个人消息',
+				chose:true
 			};
+		},
+		methods:{
+			choseShow(){
+				this.chose = !this.chose
+			}
 		}
 	}
 </script>

@@ -2,18 +2,7 @@
 	<view class="father">
 		<Top :title='title'></Top>
 		<view class="title" :style="{'margin-top':dem.top+'px'}">
-			<view class="first">
-				<text>佣金提现</text>
-				<view></view>
-			</view>
-			<view >
-				<text>余额提现</text>
-				<view></view>
-			</view>
-			<view>
-				<text>结算明细</text>
-				<view></view>
-			</view>
+			<selects :t_list='t_list'  bac='true'></selects>
 		</view>
 		<view class="content">
 			<view class="item">
@@ -83,19 +72,26 @@
 
 <script>
 import Top from '../../components/navTop.vue'
+import selects from '../../components/Selectionbar.vue'
 	export default {
 		created(){
 			this.dem.top = this.CustomBar
 		},
 		components:{
-			Top
+			Top,
+			selects
 		},
 		data() {
 			return {
 				dem:{
 					top:0
 				},
-				title:'结算月报'
+				title:'结算月报',
+				t_list:[
+					{title:'佣金提现',id:0},
+					{title:'余额提现',id:1},
+					{title:'结算明细',id:2},
+				],
 			};
 		}
 	}
@@ -188,11 +184,12 @@ import Top from '../../components/navTop.vue'
 	 }
 	}
 	.submit{
-		width: 660rpx;
+		width: 600rpx;
 		line-height: 100rpx;
 		background-color: #d6d6d6;
 		text-align: center;
 		border-radius: 16rpx;
+		margin: 0 auto;
 	}
 	.toast{
 		margin-top: 10rpx;
@@ -203,9 +200,10 @@ import Top from '../../components/navTop.vue'
 }
 .tixian{
 	text-align: center;
-	margin-bottom: 10rpx;
+	margin-bottom: 20rpx;
 }
 .ti_items{
+	font-size: 30rpx;
 	width: 700rpx;
 	margin: 0 auto;
 	padding: 0 49rpx;

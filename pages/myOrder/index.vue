@@ -2,13 +2,7 @@
 	<view style="overflow: hidden;padding-bottom: 130rpx;">
 		<navTop :title='title'/>
 		<view class="father" :style="{'margin-top':dem.top+'px'}">
-			<view class="title">
-				<text>全部</text>
-				<text>待付款</text>
-				<text>待评论</text>
-				<text>待发货</text>
-				<text>待收货</text>
-			</view>
+			<selects :t_list='t_list'></selects>
 			<view class="content">
 				<view class="cttitle">
 					<text>团黄旗舰店</text>
@@ -62,19 +56,28 @@
 
 <script>
 import navTop from '../../components/navTop.vue'
+import selects from '../../components/Selectionbar.vue'
 	export default {
 		created(){
 			this.dem.top = this.CustomBar
 		},
 		components:{
-			navTop 
+			navTop,
+			selects
 		},
 		data() {
 			return {
 				dem:{
 					top:0
 				},
-				title:'我的订单'
+				title:'我的订单',
+				t_list:[
+					{title:'全部',id:0},
+					{title:'待付款',id:1},
+					{title:'待评论',id:2},
+					{title:'待发货',id:3},
+					{title:'待收货',id:4},
+				],
 			};
 		}
 	}

@@ -7,6 +7,12 @@
 		}
 	},
 	{
+		"path": "pages/Receiving/index",
+		"style": {
+			"navigationBarTitleText": "添加收货地址"
+		}
+	},
+	{
 		"path": "pages/order/index",
 		"style": {
 			"navigationBarTitleText": "确认订单"
@@ -57,7 +63,7 @@
 	{
 		"path": "pages/settlement/index",
 		"style": {
-			"navigationBarTitleText": "结算月报"
+			"navigationBarTitleText": "结算月报1"
 		}
 	},
 	{

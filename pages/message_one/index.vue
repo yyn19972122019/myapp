@@ -1,33 +1,7 @@
 <template>
 	<view style="overflow: hidden;padding-bottom: 130rpx;">
 		<Top :title='title'></Top>
-		<view class="title" :style="{'margin-top':dem.top+'px'}">
-			<view class="first">
-				<text>普通佣金</text>
-				<view></view>
-			</view>
-			<view class="mt_gun">
-				<text class='gun'></text>
-			</view>
-			<view >
-				<text>优选佣金</text>
-				<view></view>
-			</view>
-			<view class="mt_gun">
-				<text class='gun'></text>
-			</view>
-			<view>
-				<text>售后扣除</text>
-				<view></view>
-			</view>
-			<view class="mt_gun">
-				<text class='gun'></text>
-			</view>
-			<view>
-				<text>活动奖励</text>
-				<view></view>
-			</view>
-		</view>
+		<selects :t_list='t_list' :top='dem.top' gun='true' bac='true'></selects>
 		<view class="clock">
 			<img src="../../static/clock.png" />
 			<text>07/20  16:50</text>
@@ -92,20 +66,31 @@
 
 <script>
 import Top from '../../components/navTop.vue'
+import selects from '../../components/Selectionbar.vue'
 	export default {
 		created(){
 			this.dem.top = this.CustomBar
 		},
 		components:{
-			Top
+			Top,
+			selects
 		},
 		data() {
 			return {
 				dem:{
 					top:0
 				},
-				title:'消息'
+				title:'消息',
+				t_list:[
+					{title:'普通佣金',id:0},
+					{title:'优选佣金',id:1},
+					{title:'售后扣除',id:2},
+					{title:'活动奖励',id:3},
+				],
 			};
+		},
+		methods:{
+			
 		}
 	}
 </script>

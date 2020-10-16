@@ -89,6 +89,7 @@ import Top from '@/components/navTop.vue';
 }
 .father{
 	position: relative;
+	font-size: 30rpx;
 }
 .title_bac{
 	position: relative;

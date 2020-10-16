@@ -37,7 +37,7 @@
 			image{
 				width: 305rpx;
 				height:230rpx;
-				margin-right: 47rpx;
+				margin-right: 30rpx;
 			}
 			.list_right{
 				.price{
@@ -51,12 +51,13 @@
 				.lists{
 					text{
 						display: inline-block;
-						width: 23%;
+						width: 30%;
 						padding: 5rpx 16rpx;
 						border: 1rpx solid #F2F2F2;
 						text-align: center;
 						border-radius: 10rpx;
 						margin-right:8rpx;
+						box-sizing: border-box;
 					}
 				}
 			}
